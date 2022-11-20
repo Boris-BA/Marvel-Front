@@ -1,8 +1,6 @@
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
-import Pagination from "../components/Pagination";
 import Filter from "../components/Filter";
-
 import Persos from "../components/Persos";
 const Characters = ({
   search,
