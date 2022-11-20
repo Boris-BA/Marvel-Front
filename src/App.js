@@ -1,7 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useRef } from "react";
-import Cookies from "js-cookie";
 
 //Pages
 import Home from "./pages/Home";
