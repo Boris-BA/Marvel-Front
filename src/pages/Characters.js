@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Filter from "../components/Filter";
 import Persos from "../components/Persos";
+import Footer from "../components/Footer";
 const Characters = ({
   search,
   setSearch,
@@ -32,6 +33,7 @@ const Characters = ({
       <h1 className="container">CHARACTERS</h1>
       <Persos search={search} page={page} limit={limit} setPage={setPage} />
       {/* <Pagination page={page} setPage={setPage} ref={ref} /> */}
+      <Footer />
     </div>
   );
 };

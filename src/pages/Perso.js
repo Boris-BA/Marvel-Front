@@ -5,6 +5,7 @@ import Cookies from "js-cookie";
 
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Perso = ({ favoris, setFavavoris }) => {
   const [data, setData] = useState();
@@ -33,6 +34,11 @@ const Perso = ({ favoris, setFavavoris }) => {
     <div>
       <Header />
       <Navbar />
+      <img
+        className="banner-site"
+        src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/characters_art_mas_dsk_01.jpg"
+        alt=""
+      />
       {isLoading ? (
         <p>Loading...</p>
       ) : (
@@ -91,6 +97,7 @@ const Perso = ({ favoris, setFavavoris }) => {
           </div>
         </div>
       )}
+      <Footer />
     </div>
   );
 };

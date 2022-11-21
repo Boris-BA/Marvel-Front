@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import A from "../components/A";
 import Cookies from "js-cookie";
 
@@ -19,6 +20,11 @@ const Favorites = ({ favoris, setFavavoris }) => {
     <div>
       <Header />
       <Navbar />
+      <img
+        className="banner-site"
+        src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/news_articles-mas_dsk_01.jpg"
+        alt=""
+      />
       {cookie !== undefined ? (
         <div>
           {deStringifiedTab.map((elem, index) => {
@@ -34,7 +40,7 @@ const Favorites = ({ favoris, setFavavoris }) => {
           <h1 className="container">Vous n'avez pas de Favoris</h1>
         </div>
       )}
-      <div></div>
+      <Footer />
     </div>
   );
 };

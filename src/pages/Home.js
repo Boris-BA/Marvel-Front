@@ -2,6 +2,8 @@ import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Comics from "../components/Comics";
 import Filter from "../components/Filter";
+import Footer from "../components/Footer";
+
 const Home = ({ search, setSearch, page, setPage, limit, setLimit }) => {
   return (
     <div>
@@ -22,6 +24,7 @@ const Home = ({ search, setSearch, page, setPage, limit, setLimit }) => {
       <h1 className="container">COMICS</h1>
       <Comics search={search} page={page} limit={limit} setPage={setPage} />
       {/* <Pagination page={page} setPage={setPage} /> */}
+      <Footer />
     </div>
   );
 };

@@ -28,15 +28,15 @@ const A = ({ id }) => {
         <>
           {data.thumbnail.path !==
             "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available" && (
-            <div className="single-card">
-              <div className="left">
+            <div className="single-card-fav">
+              <div className="left-fav">
                 <img
-                  className="single-card-img "
+                  className="single-card-img-fav "
                   src={`${data.thumbnail.path}.${data.thumbnail.extension}`}
                   alt=""
                 />
               </div>
-              <div className="right">
+              <div className="right-fav">
                 <div className="right-top">
                   <div className="single-card-name">{data.name}</div>
                   {data.description ? (
