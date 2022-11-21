@@ -16,7 +16,8 @@ const Perso = ({ favoris, setFavavoris }) => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4000/personnages/${id}`
+          // `http://localhost:4000/personnages/${id}`
+          `https://site--marvel-back--2qgmjpqnw8yp.code.run/personnages/${id}`
         );
         console.log(response.data);
         setData(response.data);
